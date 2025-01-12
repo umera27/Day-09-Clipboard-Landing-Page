@@ -1,0 +1,242 @@
+:root{
+    --cyan-color:hsl(171, 66%, 44%);
+    --blue-color:hsl(233, 100%, 69%);   
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+        
+    font-family: 'Bai Jamjuree', sans-serif;
+
+}
+
+section{
+    border: none;   
+    padding: 2em;
+    background-color: white;
+    min-width: 100%;
+    
+}
+h1,h2{
+    text-align: center;
+    color:hsl(210, 10%, 33%);
+    margin-bottom: 1em;
+    
+}
+p{ 
+   line-height: 1.5em;
+   line-break: 1.5em;
+   word-spacing: .5em;
+   color: hsl(201, 11%, 66%); 
+   margin-bottom: 1em;
+   font-size: 16px;
+   text-indent: 25px;
+  
+}
+.cyan{       
+    background-color:var(--cyan-color);           
+}
+.blue{
+    background-color: var(--blue-color);            
+    
+}
+.button{
+    text-align: center;
+}
+.btn{  
+    padding: 1em 5.5em;
+    margin: 1em;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    
+}
+.btn:hover{
+    
+    color: black;
+}
+
+.footer{
+    padding-top: 2em;
+    background-color: whitesmoke;
+    color: hsl(201, 11%, 46%);      
+}
+.footer ul{
+    list-style: none;     
+}
+.footer ul li{
+    text-align: center;
+    padding: 1em;    
+}
+
+.footer .image img{
+    max-width: 50px; 
+    max-height: 50px;             
+    }
+.footer .image{
+    text-align: center;
+}    
+.footer li:hover{
+    color:hsl(171, 66%, 44%);
+}
+.footer .logo img:hover{
+    background-color: rgb(255,255,255);
+}
+.footer .logo{
+    text-align: center;
+    
+}
+.footer .logo img{
+    padding: .5em;
+}
+
+
+section:nth-child(1){   background-image:url('bg-header-mobile.png');
+   background-repeat: no-repeat;
+   background-size: 100% 50%;
+   min-height: 500px;
+   
+}
+section:nth-child(1) .LogoImage{
+    text-align: center;
+    }
+section:nth-child(1) h1{
+    text-indent: 50px;
+   text-align: center;
+   margin-bottom: 2em;
+}
+section:nth-child(2){
+        min-height: 970px;
+        
+    }
+section:nth-child(2) img{
+    max-width: 280px;      
+    margin-top: 2em;   
+    
+}
+section:nth-child(3) img{
+     max-width: 280px;      
+    margin-top: 2em;   
+     }
+section:nth-child(4) img{
+    margin-left: 5em;
+    padding: 2em;
+    
+}
+section:nth-child(5)  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   
+}   
+section:nth-child(5) img{
+    width: 200px;
+    padding: 2em;
+    animation: autoRotate both;
+    animation-timeline:view(70% 5%);
+}
+
+
+
+.footer img:hover{
+    color:var(--cyan-color);
+    
+    
+}
+h1,h2,p{
+    animation: autoRotate both;
+       animation-timeline:view(70% 5%);
+}
+
+ @media(min-width:1024px){
+     
+     h1{
+         margin-bottom: 2em;
+     }
+     
+    .footer{
+        width: 100%;
+        height: 200px;
+    }
+     .footer ul{
+        display: flex; 
+        flex-wrap: wrap;
+        width: 400px;
+        text-align: center;
+     }
+     .footer .logo{
+         float: right;
+          position: relative;
+          top: -100px;
+     }
+     
+    .footer .image{
+        float: left;
+        margin-right: 5em;
+        margin-left: 5em;
+    }
+    
+    section:nth-child(2) img{
+        min-width: 70%;
+        margin-left: -10em;
+    }
+    section:nth-child(2) .aside{
+        max-width:400px;
+        position: absolute;
+        left: 60%;
+        top: 750px;
+        padding: 1em;
+    }
+    section:nth-child(2) p,h2{
+        text-indent: 0px;
+        text-align: left;
+    }
+     section:nth-child(3) img{
+         min-width: 70%;
+         
+     }
+     section:nth-child(3) .image-device{
+         text-align: center;
+     }
+     section:nth-child(4) h2,p{
+         text-align: center;
+     }
+     section:nth-child(4) .photo {
+         display: flex;
+         
+     }
+     section:nth-child(4) .photo1,.photo2,.photo3{
+         padding: 2em;
+     }
+     section:nth-child(6){
+         min-height: 500px;
+         padding: 10em;
+     }
+     section:nth-child(5){
+         display: inline;
+       
+     }
+     section:nth-child(5) img{
+         width: 180px;
+         
+         
+     } 
+     }
+     
+     
+     
+@keyframes autoRotate {
+    from{
+        transform: translate(200px) scale(0.3);
+        opacity: 0;
+    }
+    to{
+        transform: translate(0px) scale(1);
+        opacity: 1;
+    }
+}
